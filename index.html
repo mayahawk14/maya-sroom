@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>mayasroom</title>
+		<!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+		<link
+			rel="icon"
+			type="text/css"
+			href="https://mayasportfolio.nekoweb.org/media/me.jpg">
+			<style>
+				html {
+					background-image: url("https://mayasportfolio.nekoweb.org/media/abbyrod.jpg");
+					background-size: 1200px 610px;
+				
+				}
+				@font-face {
+    				font-family: "pixelFont"; /* Name your font */
+    				src: url("https://mayasportfolio.nekoweb.org/windows-bold[1].ttf");
+    				font-weight: normal;
+    				font-style: normal;
+    				font-display: swap; /* Helps prevent render-blocking */
+				}
+				.toolbar {
+					background-color: lightgray;
+					width: 100%;
+					height: 20px;
+  					display: flex; /* Optional: Add space between elements */
+  					gap: 15px;
+  					font-family: pixelFont;
+  					font-size: 13px;
+  					border-top: 1px solid #FFFFFF; /* Top highlight */
+  					border-left: 1px solid #FFFFFF; /* Left highlight */
+  					border-right: 1px solid #808080; /* Right shadow */
+  					border-bottom: 1px solid #808080;
+  					box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5),   /* Bottom-right dark shadow */
+    							-1px -1px rgba(255, 255, 255, 0.5);
+
+					
+				}
+				.bottombar {
+					position: fixed;
+					bottom: 0;       /* Aligns the element with the bottom edge */ 
+  					left: 0;    
+  					
+					
+    				
+  					padding:0;
+  					margin:0;/* Positions the element relative to the browser window */
+  					
+  					
+				}
+				.folder {
+					width:70px;
+					height:60px;
+					position: absolute; 
+				}
+				
+				p, body {
+					margin:0;
+				}
+				p {
+					font-family: pixelFont;
+					padding: 2px 0 0 0;
+				}
+				
+			</style>
+    </head>
+    <body>
+    	<div class="toolbar">
+			<img src="https://mayasportfolio.nekoweb.org/media/apple.png" style="width: 25px; height: auto; padding:0;">
+			<p>mayasroom</p>
+			<p>File</p>
+			<p>Edit</p>
+			<p>View</p>
+			<p>Window</p>
+			<p>Special</p>
+			<p>Help</p>
+			<div style="background-color: lightgray;
+					width: 100%;
+					height: 20px;
+					padding: 0 5px 0 0;">
+				<p style="text-align: right;">4:44 AM</p>
+			</div>
+			
+		</div>
+        <div class="folders">
+        	<div>    <!-- ABOUT -->
+        		<img class="folder" style="top: 100px; left: 200px;" 
+        						src="https://mayasportfolio.nekoweb.org/media/finalfolderpng.png">
+        		<p class="folder" style="top:155px; left: 215px; ">about</p>
+        	</div>
+        	<div>    <!-- MAP -->
+        	<p class ="folder" style="top: 100px; left: 600px;"><a href="https://mayasportfolio.nekoweb.org/apps/map.html"><img src="https://mayasportfolio.nekoweb.org/media/worldpng.png" alt="world"></a> </p>
+        		<p class="folder" style="top:150px; left: 615px;">map</p>
+        	</div>
+        	<div>    <!-- YOUTUBE -->
+        		<p class ="folder" style="top: 300px; left:400px;"><a href="http://www.youtube.com/@mayahawkins3938"><img src="https://mayasportfolio.nekoweb.org/media/vidpng.png" alt="yootoob"></a> </p>
+        		<p class="folder" style="top: 345px; left: 400px;">youtube</p>
+        	</div>
+        	<div>   <!-- LIBRARY --> 
+        		<p class ="folder" style="top: 200px; left:800px;"><a href="https://mayasportfolio.nekoweb.org/apps/library.html"><img src="https://mayasportfolio.nekoweb.org/media/FINALlibrary.png" alt="libary"></a> </p>
+        		<p class="folder" style="top: 255px; left: 820px;">library</p>
+        	</div>
+        	
+        </div>
+        
+        
+        
+        
+        <div class="bottombar">
+        	<img src="https://mayasportfolio.nekoweb.org/media/bar.png">
+        </div>
+    </body>
+</html>
