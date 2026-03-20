@@ -7,5 +7,5 @@ Feel free to wander my room for a bit. I'm always changing and updating it, so i
 
 
 ### Couple notes:
-- If the first page looks stupid, that's because that is what my real desktop (roughly) looks like. I thought it would be funny but looking at it every once in a while is an eyesore. Either way, that's the point.
 - One of my primary philosophies of project building is: make functional now, make pretty later. This is one of those heavy examples.
+- If the first page looks stupid, that's because that is what my real desktop (roughly) looks like. I thought it would be funny but looking at it every once in a while is an eyesore. Either way, that's the point.
