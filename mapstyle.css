@@ -1,7 +1,13 @@
-
 html {
-    background-image: url("https://png.pngtree.com/background/20250103/original/pngtree-textured-crumpled-paper-background-with-copy-space-isolated-on-a-white-picture-image_13468466.jpg");
-    background-size: 1200px 610px;
+    background-image: url("https://mayasportfolio.nekoweb.org/media/cloth022.jpg");
+        
+}
+@font-face {
+    font-family: "pixelFont"; /* Name your font */
+    src: url("https://mayasportfolio.nekoweb.org/windows-bold[1].ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Helps prevent render-blocking */
 }
 .toolbar {
     background-color: lightgray;
@@ -16,10 +22,197 @@ html {
     border-right: 1px solid #808080; /* Right shadow */
     border-bottom: 1px solid #808080;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5),   /* Bottom-right dark shadow */
-          -1px -1px rgba(255, 255, 255, 0.5);
+                -1px -1px rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 3;
 }
-.worldstamps {
-    width: 400px;
-    height: auto;
+.world {
+    background-image: url("https://mayasportfolio.nekoweb.org/media/pixelmap.png");
+    background-size: cover;
+    height: 600px;
+    width: auto;
+    border: 0 solid #ccc;
+    z-index: 1;
 }
-        
+
+.pin {
+    background-image: url("https://mayasportfolio.nekoweb.org/media/apple.png");
+    position: world; /* Positions image relative to the container */
+    display: flex;
+    -webkit-appearance: button;
+    z-index: 2;
+}
+
+
+marquee {
+    height: 70px;
+    width: cover;
+}
+img {
+    height: 70px;
+    width: auto;
+}
+header {
+    padding: 25px 0 0 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+p, body {
+    margin:0;
+}
+p {
+    font-family: pixelFont;
+    padding: 2px 0 0 0;
+}
+
+#overlay {
+  
+    place-items: center;
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+.close-button {
+    padding: 20px 0 0 0;
+  color: #aaaaaa;
+  float: right;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.close-button:hover, .close-button:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+
+  align-items: center; /* Centers the child div vertically */
+  /* Optional: justify-content: center; would center it horizontally as well */
+  height: 600px;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  place-items: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin:auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+}
+
+
+
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50; /* Green background */
+    border-color: lightblue;
+    cursor: pointer;           /* Change mouse cursor to pointer on hover */
+    border-radius: 50%;  
+    overflow: hidden; /* Ensures the image doesn't bleed outside the circle */
+    display: flex; /* Centers the image inside the button */
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    clip-path: circle(50%);
+    object-fit: cover; /* Ensures the image covers the area without stretching and maintains aspect ratio */
+
+}
