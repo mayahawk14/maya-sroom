@@ -12,9 +12,9 @@ html {
     font-display: swap; /* Helps prevent render-blocking */
 }
 .toolbar {
-    background-color: lightgray;
-    width: 100%;
-    height: 20px;
+  background-color: lightgray;
+  width: 100%;
+  height: 20px;
     display: flex; /* Optional: Add space between elements */
     gap: 15px;
     font-family: pixelFont;
@@ -42,7 +42,7 @@ html {
 .books {
   position: shelf; /* Positions image relative to the container */
   display: flex;
-  z-index: 2;
+    z-index: 2;
     
 
 
@@ -55,6 +55,7 @@ html {
   height: 320px;
     top: 225px;
   left: 220px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
   
 }
 .TGF:hover {
@@ -64,8 +65,8 @@ html {
   position: absolute;
   width: 230px;
   height: 360px;
-  top: 300px;
-  left: 300px;
+    top: 300px;
+  left: 240px;
   z-index: 2;
 }
 .OTR {
@@ -74,30 +75,28 @@ html {
   
   background-size: cover;
   width: 30px;
-  height: 285px;
-  top: 256px;
+    height: 285px;
+    top: 256px;
   left: 280px;
 }
-
 .OTR:hover {
-
+  
   background-image: url("https://mayasportfolio.nekoweb.org/media/books/otrcover.png");
   background-size: cover;
   position: absolute;
   width: 260px;
   height: 360px;
-  top: 300px;
+    top: 300px;
   left: 300px;
   z-index: 2;
 }
-
 .RWE {
   position: absolute;
   background-image: url("https://mayasportfolio.nekoweb.org/media/books/RWEspine.png");
   background-size: cover;
   width: 40px;
   height: 320px;
-  top: 220px;
+    top: 220px;
   left: 305px;
 }
 .RWE:hover {
@@ -106,7 +105,7 @@ html {
   position: absolute;
   width: 260px;
   height: 390px;
-  top: 300px;
+    top: 300px;
   left: 300px;
   z-index: 2;
 }
@@ -116,7 +115,7 @@ html {
   background-size: cover;
   width: 80px;
   height: 260px;
-  top: 283px;
+    top: 283px;
   left: 335px;
 }
 .IWWV:hover {
@@ -125,10 +124,95 @@ html {
   position: absolute;
   width: 260px;
   height: 390px;
-  top: 300px;
+    top: 300px;
   left: 300px;
   z-index: 2;
 }
+
+.IGYTS {
+  position: absolute;
+  background-image: url("https://mayasportfolio.nekoweb.org/media/books/igyts.png");
+  background-size: cover;
+  width: 115px;
+  height: 335px;
+    top: 212px;
+  left: 365px;
+  transform: rotate(-3deg);
+}
+.IGYTS:hover {
+  background-image: url("https://jandynelson.com/wp-content/uploads/2014/08/sun_375w.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 260px;
+  height: 390px;
+    top: 300px;
+  left: 350px;
+  z-index: 2;
+  transform: rotate(3deg);
+}
+
+.MCB {
+  position: absolute;
+  background-image: url("https://mayasportfolio.nekoweb.org/media/books/MCBSpine.png");
+  background-size: cover;
+  width: 100px;
+  height: 300px;
+    top: 245px;
+  left: 418px;
+  transform: rotate(-2deg);
+}
+.MCB:hover {
+  background-image: url("https://groveatlantic-b.b-cdn.net/core/wp-content/uploads/2017/04/thumbnail_MexicoCityBluesPK_1P.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 260px;
+  height: 390px;
+    top: 300px;
+  left: 350px;
+  z-index: 2;
+}
+.Grend {
+  position: absolute;
+  background-image: url("https://mayasportfolio.nekoweb.org/media/books/GrendSpine.png");
+  background-size: cover;
+  width: 105px;
+  height: 305px;
+    top: 240px;
+  left: 467px;
+}
+.Grend:hover {
+  background-image: url("https://m.media-amazon.com/images/I/61fsD7040uL._AC_UF1000,1000_QL80_.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 260px;
+  height: 430px;
+    top: 300px;
+  left: 350px;
+  z-index: 2;
+}
+.TSH {
+  position: absolute;
+  background-image: url("https://mayasportfolio.nekoweb.org/media/books/Layer%201.png");
+  background-size: cover;
+  width: 350px;
+  height: 90px;
+    top: 335px;
+  left: 400px;
+  transform: rotate(92deg);
+  
+}
+.TSH:hover {
+  background-image: url("https://prodimage.images-bn.com/pimages/9781400031702_p0_v11_s600x595.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 260px;
+  height: 390px;
+    top: 300px;
+  left: 350px;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+
 .CDs {
   position: absolute;
   display: flex;
@@ -144,22 +228,22 @@ html {
 }
 .ATL {
   display: block;
-  text-decoration: none; /* Removes default underline */
-  color: inherit; /* Inherits color from parent, or set a specific color */
-  cursor: pointer; /* Ensures the cursor changes to a hand icon */
-  /* Add other styling for your div here */
-  background-image: url("https://mayasportfolio.nekoweb.org/media/albums/atlalbum.png");
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Inherits color from parent, or set a specific color */
+    cursor: pointer; /* Ensures the cursor changes to a hand icon */
+    /* Add other styling for your div here */
+    background-image: url("https://mayasportfolio.nekoweb.org/media/albums/atlalbum.png");
   background-size: cover;
   width: 250px;
   height: auto;
 }
 .REVOL {
   display: block;
-  text-decoration: none; /* Removes default underline */
-  color: inherit; /* Inherits color from parent, or set a specific color */
-  cursor: pointer; /* Ensures the cursor changes to a hand icon */
-  /* Add other styling for your div here */
-  background-image: url("https://mayasportfolio.nekoweb.org/media/albums/ADRLivealbum.png");
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Inherits color from parent, or set a specific color */
+    cursor: pointer; /* Ensures the cursor changes to a hand icon */
+    /* Add other styling for your div here */
+    background-image: url("https://mayasportfolio.nekoweb.org/media/albums/ADRLivealbum.png");
   background-size: cover;
   width: 230px;
   height: auto;
@@ -167,22 +251,22 @@ html {
 }
 .CHARM {
   display: block;
-  text-decoration: none; /* Removes default underline */
-  color: inherit; /* Inherits color from parent, or set a specific color */
-  cursor: pointer; /* Ensures the cursor changes to a hand icon */
-  /* Add other styling for your div here */
-  background-image: url("https://clairo.com/cdn/shop/files/CharmCD_a0f4f876-e6b1-4ddf-9762-7c0956ea690c_1024x1024.png?v=1715933786");
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Inherits color from parent, or set a specific color */
+    cursor: pointer; /* Ensures the cursor changes to a hand icon */
+    /* Add other styling for your div here */
+    background-image: url("https://clairo.com/cdn/shop/files/CharmCD_a0f4f876-e6b1-4ddf-9762-7c0956ea690c_1024x1024.png?v=1715933786");
   background-size: cover;
   width: 250px;
   height: auto;
 }
 .TP {
   display: block;
-  text-decoration: none; /* Removes default underline */
-  color: inherit; /* Inherits color from parent, or set a specific color */
-  cursor: pointer; /* Ensures the cursor changes to a hand icon */
-  /* Add other styling for your div here */
-  background-image: url("https://mayasportfolio.nekoweb.org/media/albums/twinpeaksalbum.png");
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Inherits color from parent, or set a specific color */
+    cursor: pointer; /* Ensures the cursor changes to a hand icon */
+    /* Add other styling for your div here */
+    background-image: url("https://mayasportfolio.nekoweb.org/media/albums/twinpeaksalbum.png");
   background-size: cover;
   width: 220px;
   height: 195px;
@@ -192,18 +276,19 @@ html {
 .ABS {
   
   display: block;
-  text-decoration: none; /* Removes default underline */
-  color: inherit; /* Inherits color from parent, or set a specific color */
-  cursor: pointer; /* Ensures the cursor changes to a hand icon */
-  /* Add other styling for your div here */
-  background-image: url("https://shop.dijondijon.com/cdn/shop/files/D_ACDPackagingJCFront_WithoutBackground_2200a47e-5e60-407d-bc6b-936a43d0b96c_1024x1024@2x.png?v=1755217726");
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Inherits color from parent, or set a specific color */
+    cursor: pointer; /* Ensures the cursor changes to a hand icon */
+    /* Add other styling for your div here */
+    background-image: url("https://shop.dijondijon.com/cdn/shop/files/D_ACDPackagingJCFront_WithoutBackground_2200a47e-5e60-407d-bc6b-936a43d0b96c_1024x1024@2x.png?v=1755217726");
   background-size: cover;
   width: 220px;
   height: 195px;
   margin: 5px 0 0 0;
 }
-.ATL:hover, .REVOL:hover, .CHARM:hover, .TP:hover, .ABS:hover{
+.ATL:hover, .REVOL:hover, .CHARM:hover, .TP:hover {
   transform: scale(1.2) translate(-20px, 0);
+  
 }
   p, body {
   margin:0;
@@ -212,3 +297,7 @@ p {
   font-family: pixelFont;
   padding: 2px 0 0 0;
 }
+a {
+    color: black;
+    text-decoration: none;
+  }
