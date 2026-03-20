@@ -1,10 +1,9 @@
 body {
-  background-image: url("https://mayasportfolio.nekoweb.org/media/abbyrod.jpg"); 
-
-    background-position: center center;      /* Centers the image within the element */
-    background-repeat: no-repeat;            /* Prevents the image from repeating */
-    background-size: 100% 100%;              /* Stretches the image to fit 100% of the width and 100% of the height of the container, ignoring aspect ratio */
-    background-attachment: fixed; 
+	background-image: url("https://mayasportfolio.nekoweb.org/media/abbyrod.jpg"); 
+	background-position: center center;      /* Centers the image within the element */
+	background-repeat: no-repeat;            /* Prevents the image from repeating */
+	background-size: 100% 100%;              /* Stretches the image to fit 100% of the width and 100% of the height of the container, ignoring aspect ratio */
+	background-attachment: fixed; 
 }
 @font-face {
   font-family: "pixelFont"; /* Name your font */
@@ -14,32 +13,29 @@ body {
   font-display: swap; /* Helps prevent render-blocking */
 }
 .toolbar {
-  background-color: lightgray;
-  width: 100%;
-  height: 20px;
-    display: flex; /* Optional: Add space between elements */
-    gap: 15px;
-    font-family: pixelFont;
-    font-size: 13px;
-    border-top: 1px solid #FFFFFF; /* Top highlight */
-    border-left: 1px solid #FFFFFF; /* Left highlight */
-    border-right: 1px solid #808080; /* Right shadow */
-    border-bottom: 1px solid #808080;
-    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5),   /* Bottom-right dark shadow */
-          -1px -1px rgba(255, 255, 255, 0.5);
+    background-color: lightgray;
+    width: 100%;
+    height: 20px;
+	display: flex; /* Optional: Add space between elements */
+	gap: 15px;
+	font-family: pixelFont;
+	font-size: 13px;
+	border-top: 1px solid #FFFFFF; /* Top highlight */
+	border-left: 1px solid #FFFFFF; /* Left highlight */
+	border-right: 1px solid #808080; /* Right shadow */
+	border-bottom: 1px solid #808080;
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5),   /* Bottom-right dark shadow */
+		  -1px -1px rgba(255, 255, 255, 0.5);
 
   
 }
 .bottombar {
   position: fixed;
   bottom: 0;       /* Aligns the element with the bottom edge */ 
-    left: 0;    
-    
-  
-    
-    padding:0;
-    margin:0;/* Positions the element relative to the browser window */
-    
+  left: 0;    
+	padding:0;
+	margin:0;/* Positions the element relative to the browser window */
+
     
 }
 .folder {
