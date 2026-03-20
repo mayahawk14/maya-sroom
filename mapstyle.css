@@ -4,7 +4,7 @@ html {
 }
 @font-face {
     font-family: "pixelFont"; /* Name your font */
-    src: url("https://mayasportfolio.nekoweb.org/windows-bold[1].ttf");
+    src: url("windows-bold[1].ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Helps prevent render-blocking */
