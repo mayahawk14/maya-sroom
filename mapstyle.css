@@ -1,10 +1,10 @@
 html {
     background-image: url("https://mayasportfolio.nekoweb.org/media/cloth022.jpg");
-        
+                
 }
 @font-face {
     font-family: "pixelFont"; /* Name your font */
-    src: url("windows-bold[1].ttf") format('truetype');;
+    src: url("https://mayasportfolio.nekoweb.org/windows-bold[1].ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Helps prevent render-blocking */
@@ -42,8 +42,8 @@ html {
     -webkit-appearance: button;
     z-index: 2;
 }
-
-
+        
+       
 marquee {
     height: 70px;
     width: cover;
@@ -105,15 +105,15 @@ p {
   color: #000;
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -186,33 +186,37 @@ p {
 }
 
 /* Add an italic font style to all quotes */
-q {
-    font-style: italic;
-}
+q {font-style: italic;}
 
 /* Add a blue color to the author */
-.author {
-    color: cornflowerblue;
-}
-
-
-
-
+.author {color: cornflowerblue;}
+        
+        
+        
+        
 button {
     width: 50px;
     height: 50px;
     background-color: #4CAF50; /* Green background */
     border-color: lightblue;
-    cursor: pointer;           /* Change mouse cursor to pointer on hover */
-    border-radius: 50%;  
-    overflow: hidden; /* Ensures the image doesn't bleed outside the circle */
-    display: flex; /* Centers the image inside the button */
-    justify-content: center;
-    align-items: center;
+  cursor: pointer;           /* Change mouse cursor to pointer on hover */
+  border-radius: 50%;  
+  overflow: hidden; /* Ensures the image doesn't bleed outside the circle */
+  display: flex; /* Centers the image inside the button */
+  justify-content: center;
+  align-items: center;
 }
 
 button img {
     clip-path: circle(50%);
     object-fit: cover; /* Ensures the image covers the area without stretching and maintains aspect ratio */
-
+      
 }
+
+
+
+
+
+
+
+
